@@ -14,6 +14,7 @@ body{
 .container{
     width: 1440px;
     margin: 0 auto;
+    border: 2PX SOLID BLUE;
 }
 .tituloSecao{
     text-align: center;
@@ -169,4 +170,91 @@ header .menu .navegacao .idioma img{
 .nossoBlog .publicacao:hover {
     transform: translateY(-10px);
     box-shadow: 0px 20px 40px #0000005a;
+}
+/* Footer */
+footer {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #00000000;
+    border: 2px solid red;
+    background: radial-gradient(circle at 0% 0%, #E4151E 0%, rgba(228, 21, 30, 1) 20%, rgba(228, 21, 30, 0.2) 55%, transparent 75%), radial-gradient(circle at 100% 0%, #FAB518 0%, rgba(250, 181, 24, 1) 20%, rgba(250, 181, 24, 0.2) 55%, transparent 75%), radial-gradient(circle at 0% 100%, #1478BE 0%, rgba(20, 120, 190, 1) 0%, rgba(20, 120, 190, 1) 30%, transparent 75%), radial-gradient(circle at 100% 100%, #029439 0%, rgba(41, 147, 53, 1) 30%, rgba(41, 147, 53, 0.2) 75%, transparent 75%);
+}
+footer .desenhoFooter {
+    width: 100%;
+    height: fit-content;
+    border: 2px solid red;
+}
+footer .container{
+    margin: 50px 0px 0px 0px;
+    max-width: none;
+    width: 100%;
+}
+footer .primeiraLinha{
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    color: #fff;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border: 2px green solid ;
+}
+.primeiraLinha input {
+    margin-top: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.primeiraLinha #digitarEmail{
+    flex: 1;
+    height: 54px;
+    padding: 0 100px 0px 20px;
+    background: rgba(255, 255, 255, .26);
+    box-sizing: border-box;
+    margin-top: 20px;
+    outline: none;
+}
+.primeiraLinha #digitarEmail::placeholder {
+    color: #fff;
+}
+.primeiraLinha #enviarEmail {
+    margin-left: -50px;
+    width: 200px;
+    text-decoration: none;
+    background-color: #1478BD;  
+    padding: 15px 25px;
+    font-weight: 500;
+
+    transition: all 0.3s;
+}
+.primeiraLinha #enviarEmail:hover {
+    background-color: #006627;
+}
+footer p{
+    max-width: 300px;
+    font-size: 20px;
+}
+
+footer .segundaLinha{
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    color: #fff;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border: 2px green solid ;
+}
+.segundaLinha img{
+    width: 192.59px;
+    height: 109.66px;
+}
+.segundaLinha .linksInstitucionais{
+    display: flex;
 }
