@@ -14,7 +14,6 @@ body{
 .container{
     width: 1440px;
     margin: 0 auto;
-    border: 2PX SOLID BLUE;
 }
 .tituloSecao{
     text-align: center;
@@ -130,7 +129,122 @@ header .menu .navegacao .idioma img{
     box-shadow: 5px 5px 10px 0px #00000050;
 }
 
-/* Nosse blog */
+/* conecte-se */
+
+.conecte-se {
+
+    background-color: #fff;
+    padding: 50px 0 50px 0;
+
+}
+
+.conecte-se .conteiner{
+
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 40px;
+    border: 1px solid #d9d9d9;
+    padding: 25px 35px;
+    margin: auto;
+
+}
+
+.conteiner:hover .botaoConecteSe{
+    cursor: pointer;
+    transform: scale(1.1);
+    animation: alternate;
+    box-shadow: 5px 5px 6px 0px #00000050;
+
+}
+
+.conteiner:hover .imagem img{
+    transform: scale(0.8);
+    animation: alternate;
+}
+
+.conecte-se .imagem{
+    width: 83.5px;
+    height: 83.5px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #fff;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+.conecte-se .imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.4s;
+    gap: 30px;
+}
+
+.conecte-se .texto{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f2124;
+    gap: 70px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.conecte-se .texto h3 {
+    margin: 0;
+    color: #2d2d2d;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.conecte-se .texto2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #1f2124;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.conecte-se .texto2 h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #2d2d2d;
+    text-align: left;
+}
+
+.conecte-se .botaoConecteSe {
+    background-image: linear-gradient(84deg, #32C121 20%, #099C61 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    padding: 13px 21px;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    flex-shrink: 0;
+    transition: all 0.4s;
+}
+
+/* Nosso blog */
 .nossoBlog {
     background-color: #f9f9f9;
     padding: 50px 0 50px 0;
@@ -171,25 +285,78 @@ header .menu .navegacao .idioma img{
     transform: translateY(-10px);
     box-shadow: 0px 20px 40px #0000005a;
 }
+
+/* SEÇÃO VÍDEOS */
+
+.secaoVideos {
+    background-color: #fff;
+    padding: 50px 0 50px 0;
+}
+
+.secaoVideos .conteiner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.secaoVideos .videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.secaoVideos .video {
+    position: relative;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.secaoVideos .Imagem-video {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.secaoVideos .video img {
+    width: 100%;
+    height: 178px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.4s ease;
+    outline: solid 5px;
+}
+
+.secaoVideos .video:hover img {
+    transform: scale(1.05);
+}
+
+.secaoVideos .video h2{
+
+    font-size: 15px;
+    text-align: justify;
+}
+
+
 /* Footer */
 footer {
-    height: 150vh;
+    height: 175vh;
     display: flex;
     flex-direction: column;
     background-color: #00000000;
-    border: 2px solid red;
     background: radial-gradient(circle at 0% 0%, #E4151E 0%, rgba(228, 21, 30, 1) 20%, rgba(228, 21, 30, 0.2) 55%, transparent 75%), radial-gradient(circle at 100% 0%, #FAB518 0%, rgba(250, 181, 24, 1) 20%, rgba(250, 181, 24, 0.2) 55%, transparent 75%), radial-gradient(circle at 0% 100%, #1478BE 0%, rgba(20, 120, 190, 1) 0%, rgba(20, 120, 190, 1) 30%, transparent 75%), radial-gradient(circle at 100% 100%, #029439 0%, rgba(41, 147, 53, 1) 30%, rgba(41, 147, 53, 0.2) 75%, transparent 75%);
 }
 footer .desenhoFooter {
     width: 100%;
     height: fit-content;
-    border: 2px solid red;
 }
 footer .container{
     margin: 50px 0px 0px 0px;
     max-width: none;
     width: 100%;
 }
+
+/* Primeira Linha */
 footer .primeiraLinha{
     width: 100%;
     margin-top: 50px;
@@ -199,8 +366,6 @@ footer .primeiraLinha{
 
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-    border: 2px green solid ;
 }
 .primeiraLinha input {
     margin-top: 30px;
@@ -239,22 +404,148 @@ footer p{
     font-size: 20px;
 }
 
-footer .segundaLinha{
-    width: 100%;
-    margin-top: 50px;
-    padding: 50px;
+/* Segunda Linha */
+
+.segundaLinha{
     display: flex;
-    color: #fff;
-
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    border: 2px green solid ;
+    align-items: center;
+    margin-bottom: 50px;
 }
+
 .segundaLinha img{
-    width: 192.59px;
-    height: 109.66px;
+    width: 210px;
+    height: 132px;
 }
+
 .segundaLinha .linksInstitucionais{
     display: flex;
+    gap: 120px;
+    margin-left: 250px;
+}
+
+.segundaLinha .linksInstitucionais ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.segundaLinha .linksInstitucionais h2{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.segundaLinha .linksInstitucionais li{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.segundaLinha .linksInstitucionais li:hover{
+    text-decoration: underline;
+}
+
+/* Terceira Linha */
+
+.terceiraLinha{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    width: 800px;
+    margin-left: 450px;
+}
+
+.terceiraLinha .contatos{
+    display: flex;
+    gap: 8px;
+}
+
+.terceiraLinha .contatos .contato{
+    background-color: #D2D2D270;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    color: #fff;
+    transition: 555ms all ease;
+}
+
+.terceiraLinha .contatos .contato:hover{
+    transform: scale(0.8);
+    border-bottom: 2px solid #fff;
+}
+
+.terceiraLinha .contatos .contato i{
+    font-size: 30px;
+}
+
+.terceiraLinha .voltaTopo{
+    background-color: #D2D2D270;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 10px;
+    height: 45px;
+    font-weight: 100;
+    margin-right: 70px;
+    transition: 555ms all ease;
+}
+
+.terceiraLinha .voltaTopo:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.terceiraLinha a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* Quarta Linha */
+
+.quartaLinha{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 250px;
+}
+
+.quartaLinha .grupo2{
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+.quartaLinha .grupo1{
+    display: flex;
+    gap: 100px;
+}
+
+.quartaLinha a{
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.quartaLinha a:hover{
+    text-decoration: underline;
+}
+
+/* Quinta Linha */
+
+.quintaLinha{
+    margin-top: 55px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
